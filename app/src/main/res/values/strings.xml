@@ -1,10 +1,16 @@
 <resources>
-    <string name="app_name">bhukkd</string>
     <string name="title_activity_discovery">Discovery</string>
+    <string name="app_name">Bhukkd</string>
+    <string name="bhukkd">Bhukkd</string>
+    <string name="welcome_back">Hungry Kya?</string>
+    <string name="read_it_together">Login with your employee id to order</string>
+    <string name="skip">Skip</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forget_password">Forget Password.?</string>
     <string name="tab_text_1">Hot Selling</string>
     <string name="tab_text_2">Snacks</string>
     <string name="tab_text_3">Beverages</string>
-    <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
-    <string name="title_activity_aaaaa">aaaaa</string>
 </resources>
