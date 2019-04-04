@@ -9,8 +9,7 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
-        <activity android:name=".OrderPage"
-            android:theme="@style/AppTheme">
+        <activity android:name=".OrderPage">
         </activity>
         <activity android:name=".OrderPlaced">
         </activity>
