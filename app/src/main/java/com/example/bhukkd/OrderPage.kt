@@ -2,12 +2,15 @@ package com.example.bhukkd
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.content.Intent
 import android.support.v7.widget.CardView
 import android.view.LayoutInflater
 import android.view.View
+import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_order_page.view.*
+import org.w3c.dom.Text
 
 class OrderPage : AppCompatActivity() {
 
@@ -38,5 +41,12 @@ class OrderPage : AppCompatActivity() {
         }
         var totalView: TextView = findViewById(R.id.total);
         totalView.setText("Total : Rs."+total);
+
+        val checkout: TextView = findViewById(R.id.checkout)
+
+        checkout.setOnClickListener {
+            val i = Intent(this@OrderPage, OrderPlaced::class.java)
+            startActivity(i)
+        }
     }
 }

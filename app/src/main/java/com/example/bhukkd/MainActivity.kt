@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
             val password = et_password.text.toString()
             if(user_name.equals("Abc") && password.equals("Abcd")) {
                 Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-                val i = Intent(this@MainActivity, OrderPlaced::class.java)
+                val i = Intent(this@MainActivity, OrderPage::class.java)
                 startActivity(i)
             }
             else {
