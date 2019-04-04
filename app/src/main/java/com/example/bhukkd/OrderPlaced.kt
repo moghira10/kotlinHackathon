@@ -8,5 +8,7 @@ class OrderPlaced : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_order_placed)
+        this.supportActionBar?.title = "Order Placed"
+
     }
 }

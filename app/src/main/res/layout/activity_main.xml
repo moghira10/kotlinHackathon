@@ -33,7 +33,7 @@
             android:foregroundGravity="bottom"
             android:indeterminate="true"
             android:padding="0dp"
-            android:theme="@style/ProgressBarStyle" />
+            android:theme="@style/ProgressBarStyle2" />
     <RelativeLayout
             android:id="@+id/afterAnimationView"
             android:layout_width="match_parent"

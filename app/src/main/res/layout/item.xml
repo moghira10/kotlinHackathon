@@ -8,11 +8,12 @@
             android:layout_width="match_parent"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:id="@+id/CardLayout"
             android:layout_height="wrap_content"
             app:cardCornerRadius="4dp"
             app:cardBackgroundColor="#f2fef2"
-            app:cardElevation="20dp"
+            app:cardElevation="5dp"
             tools:layout_editor_absoluteX="8dp">
         <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"

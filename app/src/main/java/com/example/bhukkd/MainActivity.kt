@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
             override fun onFinish() {
                 bookITextView.visibility = View.GONE
                 loadingProgressBar.visibility = View.GONE
-                rootView.setBackgroundColor(ContextCompat.getColor(this@MainActivity, R.color.colorSplashText))
+                rootView.setBackgroundColor(ContextCompat.getColor(this@MainActivity, R.color.colorSplashText5))
                 bookIconImageView.setImageResource(R.drawable.kg)
                 var lp :ViewGroup.LayoutParams = bookIconImageView.layoutParams
                 lp.height = 150
@@ -57,6 +57,8 @@ class MainActivity : AppCompatActivity() {
             else {
                 Toast.makeText(this, "Please enter valid Username and Password", Toast.LENGTH_SHORT).show()
             }
+
+
         }
     }
 

@@ -51,7 +51,8 @@ class Discovery : AppCompatActivity() {
 
 
 
-        var items : Array<MenuItemObj> = arrayOf(MenuItemObj("Sweet Corn Pizza", 80, 0), MenuItemObj("sdfkja", 90, 0))
+        var items : Array<MenuItemObj> = arrayOf(MenuItemObj("Sweet Corn Pizza", 80, 0), MenuItemObj("Veg Sandwich", 30, 0),
+            MenuItemObj("Cold Coffee", 100, 0),MenuItemObj("Fries", 50, 0))
 
 
       //  cart2 = (arguments!!.get("ARG_CART") as ArrayList<MenuItemObj>)?: arrayListOf<MenuItemObj>()
@@ -73,6 +74,17 @@ class Discovery : AppCompatActivity() {
             addBtn.setOnClickListener{
                 var ckItem: MenuItemObj;
                 ckItem = MenuItemObj("${itemObj.itemName}", itemObj.itemPrice,++qty)
+                cart.put(itemObj.itemName, ckItem)
+                addBtn.text = qty.toString()
+            }
+
+            var minusBtn :Button = itemView.findViewById<Button>(R.id.minusitem)
+            minusBtn.setOnClickListener{
+                var ckItem: MenuItemObj;
+                if(--qty < 0){
+                    qty = 0
+                }
+                ckItem = MenuItemObj("${itemObj.itemName}", itemObj.itemPrice,qty)
                 cart.put(itemObj.itemName, ckItem)
                 addBtn.text = qty.toString()
             }
