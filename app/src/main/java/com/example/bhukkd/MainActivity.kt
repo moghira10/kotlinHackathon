@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
             var et_password: TextView = findViewById<TextView>(R.id.passwordEditText)
             val user_name = et_user_name.text.toString()
             val password = et_password.text.toString()
-            if(user_name.equals("Abc") && password.equals("Abcd")) {
+            if(user_name.equals("ustat") && password.equals("bhukkad")) {
                 Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
                 val i = Intent(this@MainActivity, Discovery::class.java)
                 startActivity(i)

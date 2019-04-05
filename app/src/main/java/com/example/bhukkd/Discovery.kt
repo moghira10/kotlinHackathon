@@ -70,12 +70,15 @@ class Discovery : AppCompatActivity() {
             var item_price : TextView = itemView.findViewById<TextView>(R.id.item_price)
             item_price.text = itemObj.itemPrice.toString()
             var addBtn :Button = itemView.findViewById<Button>(R.id.additem)
+
+            var qtyTxt :TextView = itemView.findViewById<TextView>(R.id.qty)
+
             var qty = 0
             addBtn.setOnClickListener{
                 var ckItem: MenuItemObj;
                 ckItem = MenuItemObj("${itemObj.itemName}", itemObj.itemPrice,++qty)
                 cart.put(itemObj.itemName, ckItem)
-                addBtn.text = qty.toString()
+                qtyTxt.text = qty.toString()
             }
 
             var minusBtn :Button = itemView.findViewById<Button>(R.id.minusitem)
@@ -86,7 +89,7 @@ class Discovery : AppCompatActivity() {
                 }
                 ckItem = MenuItemObj("${itemObj.itemName}", itemObj.itemPrice,qty)
                 cart.put(itemObj.itemName, ckItem)
-                addBtn.text = qty.toString()
+                qtyTxt.text = qty.toString()
             }
           //  Log.e("cart",cart2.toString());
             ll.addView(itemView)

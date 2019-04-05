@@ -3,7 +3,7 @@ package com.example.bhukkd
 import android.os.Parcel
 import android.os.Parcelable
 
-public class MenuItemObj(var itemName: String, var itemPrice: Int, var quantity: Int) : Parcelable{
+public class MenuItemObj    (var itemName: String, var itemPrice: Int, var quantity: Int) : Parcelable{
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readInt(),
